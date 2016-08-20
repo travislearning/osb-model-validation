@@ -120,7 +120,7 @@ def main():
                 if ee.is_installed(None):
                     already_installed = True
                 else:
-		                from engines.getjnml import install_jnml
+		    from engines.getjnml import install_jnml
                     install_jnml()
                     from engines.getbrian2 import install_brian2
                     install_brian2()
