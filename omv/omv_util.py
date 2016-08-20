@@ -146,7 +146,7 @@ def main():
                 from engines.getneuroconstruct import install_neuroconstruct
                 install_neuroconstruct()
             elif eng == 'jNeuroML_Brian2 ':
-		             from engines.getjnml import install_jnml
+		 from engines.getjnml import install_jnml
                  install_jnml()
                  from engines.getbrian2 import install_brian2
 		             install_brian2()
