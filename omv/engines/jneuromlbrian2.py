@@ -34,7 +34,7 @@ class JNeuroMLBrian2Engine(JNeuroMLEngine):
         JNeuroMLBrian2Engine.environment_vars.update(
             Brian2Engine.environment_vars)
         inform("PATH: " + JNeuroMLBrian2Engine.path)
-        inform("Env vars: %s" % JNeuroMLBrian2Engine.environment_vars)
+        inform("Env vars: %s" % JNeuroMLBrian2Engine.environment_vars) 
 
     def run(self):
         try:
