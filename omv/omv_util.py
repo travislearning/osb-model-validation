@@ -115,16 +115,6 @@ def main():
                     from engines.getpyneuroml import install_pynml
                     install_pynml() 
                     
-            elif eng == 'jNeuroML_Brian2' :
-                from engines.jneuromlbrian2 import JNeuroMLBrian2Engine as ee
-                if ee.is_installed(None):
-                    already_installed = True
-                else:
-		    from engines.getjnml import install_jnml
-                    install_jnml()
-                    from engines.getbrian2 import install_brian2
-                    install_brian2()
-                    
             elif eng == 'PyLEMS_NeuroML2':
                 from engines.getpylems import install_pylems
                 install_pylems()
@@ -145,11 +135,6 @@ def main():
             elif eng == 'Py_neuroConstruct' or eng == 'neuroConstruct':
                 from engines.getneuroconstruct import install_neuroconstruct
                 install_neuroconstruct()
-            elif eng == 'jNeuroML_Brian2 ':
-		 from engines.getjnml import install_jnml
-                 install_jnml()
-                 from engines.getbrian2 import install_brian2
-		 install_brian2()
             else:
                 print('Code not implemented yet for installing %s using: omv install! Try running a test using this engine.'%eng)
                 exit(1)
