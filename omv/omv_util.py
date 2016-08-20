@@ -149,7 +149,7 @@ def main():
 		 from engines.getjnml import install_jnml
                  install_jnml()
                  from engines.getbrian2 import install_brian2
-		             install_brian2()
+		 install_brian2()
             else:
                 print('Code not implemented yet for installing %s using: omv install! Try running a test using this engine.'%eng)
                 exit(1)
